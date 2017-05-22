@@ -261,7 +261,7 @@
   \begin{sankeydiagram}[
     sankey tot length=90pt,%
     sankey tot quantity=10,%
-    sankey min radius=30pt,%
+    sankey min radius=10pt,%
     sankey fill/.style={
       draw,line width=0pt,
       fill,
@@ -278,41 +278,43 @@
 
 
     \sankeynodestart{10}{0}{Qtuz}{0,100}
-    \sankeyadvance{Qtuz}{50pt}
+    \sankeyadvance{Qtuz}{40pt}
 
     \sankeyfork{Qtuz}{8.183/Q1,1.827/Qveszt}
 
     \sankeyturn{Qveszt}{-90}
-    \sankeyadvance{Qveszt}{20pt}
+    \sankeyadvance{Qveszt}{10pt}
     \sankeynodeend{1 + 1.827}{-90}{Qveszt}{Qveszt}
 
 
-    \sankeyadvance{Q1}{50pt}
+    \sankeyadvance{Q1}{30pt}
     \sankeyfork{Q1}{2.38/Q2, 5.792/Qkond}
 
     \sankeyturn{Qkond}{-90}
     \sankeyadvance{Qkond}{20pt}
     \sankeynodeend{1 + 5.792}{-90}{Qkond}{Qkond}
 
-    \sankeyadvance{Q2}{70pt}
+    \sankeyadvance{Q2}{60pt}
     \sankeyfork{Q2}{2.354/Q3, 0.026/Ptm}
 
     \sankeyturn{Ptm}{-90}
+    \sankeyadvance{Ptm}{15pt}
     \sankeynodeend{0.1 + 0.026}{-90}{Ptm}{Ptm}
 
-    \sankeyadvance{Q3}{30pt}
+    \sankeyadvance{Q3}{20pt}
     \sankeyfork{Q3}{2.277/Q4, 0.077/Phm}
 
     \sankeyturn{Phm}{-90}
+    \sankeyadvance{Phm}{7pt}
     \sankeynodeend{0.1 + 0.077}{-90}{Phm}{Phm}
 
-    \sankeyadvance{Q4}{30pt}
+    \sankeyadvance{Q4}{20pt}
     \sankeyfork{Q4}{2.195/Q5, 0.082/PgmPgv}
 
     \sankeyturn{PgmPgv}{-90}
     \sankeynodeend{0.1 + 0.082}{-90}{PgmPgv}{PgmPgv}
 
-    \sankeyadvance{Q5}{60pt}
+    \sankeyadvance{Q5}{20pt}
     \sankeynodeend{1 + 2.195}{0}{Q5}{Q5}
 
     
