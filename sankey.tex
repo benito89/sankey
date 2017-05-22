@@ -81,6 +81,11 @@
       -- ([xshift=-\sankeyarrowlen]##3.south west)
       -- (##3.south west);
     \end{scope}
+    \begin{pgfonlayer}{sankeydebug}
+      \pgfmathsetmacro{\len}{10}
+      \draw ($(##3.west)!\len pt!90:(##3.south west)$)
+      node[font=\tiny,text=black] {##3};
+    \end{pgfonlayer}
   }
 
   \newcommand\sankeynodeend[4]{%prop,orientation,name,pos
