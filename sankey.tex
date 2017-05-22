@@ -104,6 +104,12 @@
       -- ([xshift=\sankeyarrowlen]##3.east)
       -- (##3.south west);
     \end{scope}
+    \begin{pgfonlayer}{sankeydebug}
+      \pgfmathsetmacro{\len}{15}
+      \draw ($(##3.west)!\len pt!90:(##3.south west)$)
+      node[font=\tiny,text=black] {##3};
+    \end{pgfonlayer}
+
   }
 
   \newcommand\sankeyadvance[3][]{%newname,name,distance
